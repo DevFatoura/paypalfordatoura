@@ -1,0 +1,259 @@
+{
+ "id" : "WH-92977980SM046421S-0W853766KT828380Y",
+"event_version" : 1.0,
+"create_time" : "2021-06-18T17:33:19.240Z",
+"resource_type" : "invoices",
+"event_type" : "INVOICING.INVOICE.PAID",
+"summary" : "An invoice is paid, partially paid, or payment is made and is pending.",
+"resource" : {
+"invoice" : {
+"id" : "INV2-AYDA-QDCM-MSGH-YGCA",
+"status" : "PAID",
+"detail" : {
+    "reference" : "deal-ref",
+    "currency_code" : "USD",
+    "note" : Thank you for your business.,
+    "memo" : This is a long contract,
+    "additional_data" : 2-4,
+    "category_code" : SHIPPABLE,
+    "invoice_number" : 123324,
+    "invoice_date" : 2021-05-07,
+    "payment_term" : {
+        "term_type" : NET_10,
+        "due_date" : 2021-05-17
+    },
+"viewed_by_recipient" : false,
+"group_draft" : false,
+"metadata" : -{
+"create_time" : 2021-06-18T17:30:18Z,
+"last_update_time" : 2021-06-18T17:32:57Z,
+"first_sent_time" : 2021-06-18T17:31:46Z,
+"last_sent_time" : 2021-06-18T17:31:46Z,
+"created_by_flow" : REGULAR_SINGLE,
+"recipient_view_url" : https://www.sandbox.paypal.com/invoice/p/#AYDAQDCMMSGHYGCA,
+"invoicer_view_url" : https://www.sandbox.paypal.com/invoice/details/INV2-AYDA-QDCM-MSGH-YGCA,
+"caller_type" : API_V2_INVOICE
+},
+"archived" : false
+},
+"invoicer" : -{
+"name" : -{
+"given_name" : David,
+"surname" : Larusso,
+"full_name" : David Larusso
+},
+"address" : -{
+"address_line_1" : 1234 First Street,
+"address_line_2" : 337673 Hillside Court,
+"admin_area_2" : Anytown,
+"admin_area_1" : CA,
+"postal_code" : 98765,
+"country_code" : US
+},
+"email_address" : sb-dfukg6475194@business.example.com,
+"phones" : -[
+-{
+"country_code" : 001,
+"national_number" : 4085551234,
+"phone_type" : MOBILE
+}
+],
+"website" : www.test.com,
+"tax_id" : ABcNkWSfb5ICTt73nD3QON1fnnpgNKBy- Jb5SeuGj185MNNw6g,
+"additional_notes" : 2-4,
+"logo_url" : https://example.com/logo.PNG
+},
+"primary_recipients" : -[
+-{
+"billing_info" : -{
+"name" : -{
+"given_name" : Stephanie,
+"surname" : Meyers,
+"full_name" : Stephanie Meyers
+},
+"address" : -{
+"address_line_1" : 1234 Main Street,
+"admin_area_2" : Anytown,
+"admin_area_1" : CA,
+"postal_code" : 98765,
+"country_code" : US
+},
+"email_address" : dev.fatoura@gmail.com
+},
+"shipping_info" : -{
+"name" : -{
+"given_name" : Stephanie,
+"surname" : Meyers,
+"full_name" : Stephanie Meyers
+},
+"address" : -{
+"address_line_1" : 1234 Main Street,
+"admin_area_2" : Anytown,
+"admin_area_1" : CA,
+"postal_code" : 98765,
+"country_code" : US
+}
+}
+}
+],
+"items" : -[
+-{
+"id" : ITEM-3DH01698HN5891510,
+"name" : Yoga Mat,
+"description" : Elastic mat to practice yoga.,
+"quantity" : 1,
+"unit_amount" : -{
+"currency_code" : USD,
+"value" : 50.00
+},
+"tax" : -{
+"id" : TAX-3ME66262E63969133,
+"name" : Sales Tax,
+"percent" : 7.25,
+"amount" : -{
+"currency_code" : USD,
+"value" : 3.27
+}
+},
+"discount" : -{
+"percent" : 5,
+"amount" : -{
+"currency_code" : USD,
+"value" : -2.50
+}
+},
+"unit_of_measure" : QUANTITY
+},
+-{
+"id" : ITEM-7YD124260T1676728,
+"name" : Yoga t-shirt,
+"quantity" : 1,
+"unit_amount" : -{
+"currency_code" : USD,
+"value" : 10.00
+},
+"tax" : -{
+"id" : TAX-3ME66262E63969133,
+"name" : Sales Tax,
+"percent" : 7.25,
+"amount" : -{
+"currency_code" : USD,
+"value" : 0.34
+}
+},
+"discount" : -{
+"amount" : -{
+"currency_code" : USD,
+"value" : -5.00
+}
+},
+"unit_of_measure" : QUANTITY
+}
+],
+"configuration" : -{
+"tax_calculated_after_discount" : true,
+"tax_inclusive" : false,
+"allow_tip" : true,
+"partial_payment" : -{
+"allow_partial_payment" : true,
+"minimum_amount_due" : -{
+"currency_code" : USD,
+"value" : 20.00
+}
+},
+"template_id" : TEMP-5FG84354W0802943N
+},
+"amount" : -{
+"breakdown" : -{
+"item_total" : -{
+"currency_code" : USD,
+"value" : 60.00
+},
+"discount" : -{
+"invoice_discount" : -{
+"percent" : 5,
+"amount" : -{
+"currency_code" : USD,
+"value" : -2.63
+}
+},
+"item_discount" : -{
+"currency_code" : USD,
+"value" : -7.50
+}
+},
+"tax_total" : -{
+"currency_code" : USD,
+"value" : 4.34
+},
+"shipping" : -{
+"amount" : -{
+"currency_code" : USD,
+"value" : 10.00
+},
+"tax" : -{
+"id" : TAX-5P876286GV338771B,
+"name" : Sales Tax,
+"percent" : 7.25,
+"amount" : -{
+"currency_code" : USD,
+"value" : 0.73
+}
+}
+},
+"custom" : -{
+"label" : Packing Charges,
+"amount" : -{
+"currency_code" : USD,
+"value" : 10.00
+}
+}
+},
+"currency_code" : USD,
+"value" : 74.21
+},
+"due_amount" : -{
+"currency_code" : USD,
+"value" : 0.00
+},
+"payments" : -{
+"paid_amount" : -{
+"currency_code" : USD,
+"value" : 74.21
+},
+"transactions" : -[
+-{
+"type" : PAYPAL,
+"payment_id" : 0LP93992WY588215U,
+"transaction_type" : SALE,
+"payment_date" : 2021-06-18,
+"method" : PAYPAL,
+"amount" : -{
+"currency_code" : USD,
+"value" : 74.21
+}
+}
+]
+},
+"links" : -[
+-{
+"href" : https://api.sandbox.paypal.com/v2/invoicing/invoices/INV2-AYDA-QDCM-MSGH-YGCA,
+"rel" : self,
+"method" : GET
+}
+]
+}
+},
+"links" : -[
+-{
+"href" : https://api.sandbox.paypal.com/v1/notifications/webhooks-events/WH-92977980SM046421S-0W853766KT828380Y,
+"rel" : self,
+"method" : GET
+},
+-{
+"href" : https://api.sandbox.paypal.com/v1/notifications/webhooks-events/WH-92977980SM046421S-0W853766KT828380Y/resend,
+"rel" : resend,
+"method" : POST
+}
+]
+}
